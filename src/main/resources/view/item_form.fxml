@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTogglePane?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import com.jfoenix.validation.NumberValidator?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import com.jfoenix.validation.ValidationFacade?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <AnchorPane layoutY="1.0" prefHeight="548.0" prefWidth="730.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175a99" height="79.0" layoutX="-10.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+            <Label layoutX="387.0" layoutY="16.0" prefHeight="36.0" prefWidth="212.0" text="Item Form" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtItemCode" layoutX="165.0" layoutY="109.0" promptText="Item Code" />
+            <ValidationFacade layoutX="190.0" layoutY="199.0" />
+            <RequiredFieldValidator layoutX="79.0" layoutY="250.0" />
+            <NumberValidator layoutX="316.0" layoutY="222.0" />
+            <JFXToolbar layoutX="286.0" layoutY="267.0" prefHeight="1.0" prefWidth="108.0" />
+            <JFXTogglePane layoutX="195.0" layoutY="175.0" prefHeight="46.0" prefWidth="38.0" />
+            <JFXTextField fx:id="txtPackSize" layoutX="371.0" layoutY="109.0" promptText="Pack Size" />
+            <JFXTextField fx:id="txtUnitPrice" layoutX="363.0" layoutY="162.0" promptText="Unit Price" />
+            <JFXTextField fx:id="txtDescription" layoutX="165.0" layoutY="162.0" promptText="Description" />
+            <JFXTextField fx:id="txtQty" layoutX="561.0" layoutY="109.0" promptText="Qty" text="QTY" />
+            <TableView fx:id="tblItems" layoutX="145.0" layoutY="260.0" prefHeight="239.0" prefWidth="596.0" stylesheets="@../css/style.css">
+               <columns>
+                  <TableColumn fx:id="colItemCode" prefWidth="114.4000244140625" text="Item Code" />
+                  <TableColumn fx:id="colDescription" prefWidth="115.20001220703125" text="Description" />
+                  <TableColumn fx:id="colPackSize" prefWidth="108.79998779296875" text="Pack Size" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="124.00006103515625" text="Unit Price" />
+                  <TableColumn fx:id="colQty" prefWidth="134.39996337890625" text="Qty" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btnAdd" layoutX="466.0" layoutY="210.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #27ae60;" text="Add" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="523.0" layoutY="210.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #3498db;" text="Update" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="596.0" layoutY="210.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="665.0" layoutY="210.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #f1c40f;" text="Search" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Button layoutX="672.0" layoutY="507.0" mnemonicParsing="false" onAction="#btnCustomerFormOnAction" prefHeight="26.0" prefWidth="102.0" text="Customer Form" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
