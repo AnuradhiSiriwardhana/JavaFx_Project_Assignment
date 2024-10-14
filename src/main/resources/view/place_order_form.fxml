@@ -11,8 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="496.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
+<AnchorPane prefHeight="496.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customer.order.PlaceOrderFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273c75" height="80.0" stroke="BLACK" strokeType="INSIDE" width="622.0" />
       <Label layoutX="227.0" layoutY="22.0" prefHeight="36.0" prefWidth="205.0" text="Place Order Form" textFill="WHITE">
@@ -20,36 +19,36 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="221.0" layoutY="119.0" prefHeight="22.0" prefWidth="87.0" text="Order Date:">
+      <Label layoutX="221.0" layoutY="105.0" prefHeight="22.0" prefWidth="87.0" text="Order Date:">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" layoutX="308.0" layoutY="119.0" prefHeight="22.0" prefWidth="87.0" text="2024-05-30">
+      <Label fx:id="lblDate" layoutX="308.0" layoutY="105.0" prefHeight="22.0" prefWidth="87.0" text="2024-05-30">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="419.0" layoutY="119.0" prefHeight="22.0" prefWidth="46.0" text="Time:">
+      <Label layoutX="419.0" layoutY="105.0" prefHeight="22.0" prefWidth="46.0" text="Time:">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Label fx:id="lblTime" layoutX="464.0" layoutY="119.0" prefHeight="22.0" prefWidth="87.0" text="21:55:40">
+      <Label fx:id="lblTime" layoutX="464.0" layoutY="105.0" prefHeight="22.0" prefWidth="87.0" text="21:55:40">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtOrderId" layoutX="55.0" layoutY="117.0" promptText="Order ID" />
-      <JFXComboBox fx:id="cmbCustomerId" layoutX="54.0" layoutY="162.0" prefHeight="26.0" prefWidth="112.0" promptText="Customer ID" />
-      <JFXComboBox fx:id="cmbItemCode" layoutX="54.0" layoutY="210.0" prefHeight="26.0" prefWidth="112.0" promptText="Item Code" />
-      <JFXTextField fx:id="txtName" layoutX="190.0" layoutY="162.0" prefHeight="26.0" prefWidth="112.0" promptText="Name" />
-      <JFXTextField fx:id="txtCity" layoutX="330.0" layoutY="162.0" prefHeight="26.0" prefWidth="112.0" promptText="City" />
-      <JFXTextField fx:id="txtSalary" layoutX="465.0" layoutY="162.0" prefHeight="26.0" prefWidth="112.0" promptText="Salary" />
-      <JFXTextField fx:id="txtDescription" layoutX="190.0" layoutY="210.0" prefHeight="26.0" prefWidth="112.0" promptText="Item Description" />
-      <JFXTextField fx:id="txtUnitPrice" layoutX="324.0" layoutY="210.0" prefHeight="26.0" prefWidth="112.0" promptText="Unit Price" />
-      <JFXTextField fx:id="txtStock" layoutX="465.0" layoutY="210.0" prefHeight="26.0" prefWidth="112.0" promptText="Stock" />
-      <TableView fx:id="tblCart" layoutX="40.0" layoutY="279.0" prefHeight="166.0" prefWidth="519.0" stylesheets="@../css/style.css">
+      <JFXTextField fx:id="txtOrderId" layoutX="55.0" layoutY="103.0" promptText="Order ID" />
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="54.0" layoutY="154.0" prefHeight="26.0" prefWidth="112.0" promptText="Customer ID" />
+      <JFXComboBox fx:id="cmbItemCode" layoutX="54.0" layoutY="202.0" prefHeight="26.0" prefWidth="112.0" promptText="Item Code" />
+      <JFXTextField fx:id="txtName" layoutX="190.0" layoutY="154.0" prefHeight="26.0" prefWidth="112.0" promptText="Name" />
+      <JFXTextField fx:id="txtCity" layoutX="330.0" layoutY="154.0" prefHeight="26.0" prefWidth="112.0" promptText="City" />
+      <JFXTextField fx:id="txtSalary" layoutX="465.0" layoutY="154.0" prefHeight="26.0" prefWidth="112.0" promptText="Salary" />
+      <JFXTextField fx:id="txtDescription" layoutX="190.0" layoutY="202.0" prefHeight="26.0" prefWidth="112.0" promptText="Item Description" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="324.0" layoutY="202.0" prefHeight="26.0" prefWidth="112.0" promptText="Unit Price" />
+      <JFXTextField fx:id="txtStock" layoutX="465.0" layoutY="202.0" prefHeight="26.0" prefWidth="112.0" promptText="Stock" />
+      <TableView fx:id="tblCart" layoutX="40.0" layoutY="273.0" prefHeight="166.0" prefWidth="519.0" stylesheets="@../css/style.css">
         <columns>
           <TableColumn fx:id="colItemCode" prefWidth="91.20001220703125" text="Item Code" />
           <TableColumn fx:id="colDescription" prefWidth="114.39996337890625" text="Description" />
@@ -58,13 +57,13 @@
             <TableColumn fx:id="colTotal" prefWidth="112.80010986328125" text="Total" />
         </columns>
       </TableView>
-      <JFXButton layoutX="445.0" layoutY="246.0" onAction="#btnAddToCartOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #e1b12c;" text="Add To Cart" textFill="WHITE">
+      <JFXButton layoutX="445.0" layoutY="238.0" onAction="#btnAddToCartOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #e1b12c;" text="Add To Cart" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </JFXButton>
-      <JFXTextField fx:id="txtQty" layoutX="373.0" layoutY="246.0" prefHeight="26.0" prefWidth="62.0" promptText="QTY" />
-      <Separator layoutX="46.0" layoutY="153.0" prefHeight="0.0" prefWidth="519.0" />
+      <JFXTextField fx:id="txtQty" layoutX="373.0" layoutY="238.0" prefHeight="26.0" prefWidth="62.0" promptText="QTY" />
+      <Separator layoutX="46.0" layoutY="143.0" prefHeight="0.0" prefWidth="519.0" />
       <JFXButton layoutX="508.0" layoutY="455.0" onAction="#btnPlaceOrderOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #44bd32;" text="Place Order" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="12.0" />
@@ -80,5 +79,7 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <JFXButton />
+      <JFXButton layoutX="407.0" layoutY="455.0" onAction="#btnCommitOnAction" text="Commit" />
    </children>
 </AnchorPane>
