@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class ItemController implements ItemService {
+public class ItemController1 implements ItemService1 {
 
     @Override
     public boolean addItem(Item item) {

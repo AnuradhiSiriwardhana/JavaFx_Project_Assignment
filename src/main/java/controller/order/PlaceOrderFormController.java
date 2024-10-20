@@ -3,7 +3,7 @@ package controller.order;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import controller.customer.CustomerController1;
-import controller.item.ItemController;
+import controller.item.ItemController1;
 import db.DBConnection;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -184,10 +184,10 @@ public class PlaceOrderFormController implements Initializable {
         cmbCustomerId.setItems(new CustomerController1().getCustomerIds());
     }
     private void loadItemCodes(){
-        cmbItemCode.setItems(new ItemController().getItemCode());
+        cmbItemCode.setItems(new ItemController1().getItemCode());
     }
     private void loadItemDate(String itemCode){
-        Item item = new ItemController().searchItem(itemCode);
+        Item item = new ItemController1().searchItem(itemCode);
 
         txtDescription.setText(item.getDescription());
         txtStock.setText(item.getQty().toString());

@@ -1,6 +1,6 @@
 package controller.order;
 
-import controller.item.ItemController;
+import controller.item.ItemController1;
 import db.DBConnection;
 import dto.Order;
 
@@ -22,7 +22,7 @@ public class OrderController {
                 boolean isOrderDetailAdd = OrderDetailController.addOrderDetail(order.getOrderDetails());
 
                 if (isOrderDetailAdd){
-                    boolean isUpdateStock = new ItemController().updateStock(order.getOrderDetails());
+                    boolean isUpdateStock = new ItemController1().updateStock(order.getOrderDetails());
 
                     if (isUpdateStock){
                         connection.commit();

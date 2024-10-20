@@ -134,36 +134,12 @@ public class CustomerFormController implements Initializable {
 
         if ( service.addCustomer(customer)){
             new Alert(Alert.AlertType.INFORMATION,"Customer Added!").show();
+            loadTable();
         }
         else {
             new Alert(Alert.AlertType.ERROR,"Customer Not Added!").show();
         }
-//
-//        String SQL = "INSERT INTO customer VALUES(?,?,?,?,?,?,?,?,?)";
-//
-//        try {
-//
-//            boolean isCustomerAdd = CrudUtil.execute(
-//                    SQL,
-//                    customer.getId(),
-//                    customer.getTitle(),
-//                    customer.getName(),
-//                    customer.getDob(),
-//                    customer.getSalary(),
-//                    customer.getAddress(),
-//                    customer.getCity(),
-//                    customer.getProvince(),
-//                    customer.getPostalCode()
-//
-//                    );
-//            if(isCustomerAdd){
-//                new Alert(Alert.AlertType.INFORMATION,"Customer Added:)").show();
-//                loadTable();
-//            }
-//
-//        } catch (SQLException e) {
-//            new Alert(Alert.AlertType.ERROR,"Customer Not Added:(").show();
-//        }
+
 
         System.out.println(customer);
     }

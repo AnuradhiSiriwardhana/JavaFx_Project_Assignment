@@ -14,6 +14,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import dto.Item;
+import service.ServiceFactory;
+import service.custom.ItemService;
+import util.ServiceType;
 
 import java.io.IOException;
 import java.net.URL;
@@ -58,7 +61,7 @@ public class ItemFormController implements Initializable {
     @FXML
     private JFXTextField txtUnitPrice;
 
-    ItemService itemController = new ItemController();
+    ItemService1 itemController = new ItemController1();
 
 
     @Override
@@ -103,12 +106,9 @@ public class ItemFormController implements Initializable {
                 txtPackSize.getText(),
                 Double.parseDouble(txtUnitPrice.getText()),
                 Integer.parseInt(txtQty.getText()));
+        ItemService itemService = ServiceFactory.getInstance().getServiceType(ServiceType.ITEM);
 
-
-
-
-            Boolean isAdd = itemController.addItem(item);
-            if (isAdd) {
+        if (itemService.addItem(item)) {
                 new Alert(Alert.AlertType.INFORMATION, "Item Added!!").show();
                 loadTabel();
             } else {
