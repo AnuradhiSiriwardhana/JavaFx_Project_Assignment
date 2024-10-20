@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b4cb16-b41f-44c9-9df5-dfeb17225377" name="Changes" comment="Complete code with Transaction">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/CustomerEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CrudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/DaoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/SuperDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/ItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/CustomerDaoimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/ItemDaoimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/SuperService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/ItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/DaoType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ServiceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/item/ItemFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerController1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerService1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/customer/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/order/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/customer/order/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/order/OrderDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/customer/order/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/order/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/item/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/item/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/item/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/CartTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CartTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/item_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/item_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/place_order_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/place_order_form.fxml" afterDir="false" />
+    <list default="true" id="a0b4cb16-b41f-44c9-9df5-dfeb17225377" name="Changes" comment="add modelmapper dependency">
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/custom/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/CustomerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,12 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1728880190705</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add modelmapper dependency">
+      <option name="closed" value="true" />
+      <created>1729432227170</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729432227171</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Customer Form and Item Form with CRUD operation" />
     <MESSAGE value="Complete code with Transaction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete code with Transaction" />
+    <MESSAGE value="add modelmapper dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modelmapper dependency" />
   </component>
 </project>

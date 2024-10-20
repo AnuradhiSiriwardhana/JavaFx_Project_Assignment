@@ -15,9 +15,9 @@ public class CustomerServiceImpl implements CustomerService {
     public boolean addCustomer(Customer customer) {
         System.out.println("Service : "+customer);
         CustomerDao customerDao = DaoFactory.getInstance().getDaoType(DaoType.CUSTOMER);
-        new ModelMapper().map(customer,CustomerEntity.class);
 
-        customerDao.save(customer);
+
+
 
         return false;
     }
