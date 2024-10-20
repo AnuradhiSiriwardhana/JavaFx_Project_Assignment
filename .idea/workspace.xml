@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b4cb16-b41f-44c9-9df5-dfeb17225377" name="Changes" comment="add modelmapper dependency without errors">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/ItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/customer/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/item/ItemController1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/item/ItemFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/item/ItemFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/item/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/item/ItemService1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/order/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/order/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/order/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/custom/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/custom/ItemDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/custom/impl/CustomerDaoimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/CustomerDaoimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/custom/impl/ItemDaoimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/ItemDaoimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/custom/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/custom/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/ItemServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="a0b4cb16-b41f-44c9-9df5-dfeb17225377" name="Changes" comment="Final add Customer,add Item" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729432735757</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final add Customer,add Item">
+      <option name="closed" value="true" />
+      <created>1729442237512</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729442237512</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +172,7 @@
     <MESSAGE value="Complete code with Transaction" />
     <MESSAGE value="add modelmapper dependency" />
     <MESSAGE value="add modelmapper dependency without errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="add modelmapper dependency without errors" />
+    <MESSAGE value="Final add Customer,add Item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final add Customer,add Item" />
   </component>
 </project>
