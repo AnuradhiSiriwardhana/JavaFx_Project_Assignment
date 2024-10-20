@@ -1,8 +1,8 @@
-package controller.customer.order;
+package controller.order;
 
 import controller.item.ItemController;
 import db.DBConnection;
-import model.Order;
+import dto.Order;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

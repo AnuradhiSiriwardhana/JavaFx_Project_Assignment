@@ -13,8 +13,11 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import model.Customer;
+import dto.Customer;
+import service.ServiceFactory;
+import service.custom.CustomerService;
 import util.CrudUtil;
+import util.ServiceType;
 
 import java.net.URL;
 import java.sql.*;
@@ -127,31 +130,40 @@ public class CustomerFormController implements Initializable {
                 txtPostalCode.getText()
         );
 
-        String SQL = "INSERT INTO customer VALUES(?,?,?,?,?,?,?,?,?)";
+        CustomerService service = ServiceFactory.getInstance().getServiceType(ServiceType.CUSTOMER);
 
-        try {
-
-            boolean isCustomerAdd = CrudUtil.execute(
-                    SQL,
-                    customer.getId(),
-                    customer.getTitle(),
-                    customer.getName(),
-                    customer.getDob(),
-                    customer.getSalary(),
-                    customer.getAddress(),
-                    customer.getCity(),
-                    customer.getProvince(),
-                    customer.getPostalCode()
-
-                    );
-            if(isCustomerAdd){
-                new Alert(Alert.AlertType.INFORMATION,"Customer Added:)").show();
-                loadTable();
-            }
-
-        } catch (SQLException e) {
-            new Alert(Alert.AlertType.ERROR,"Customer Not Added:(").show();
+        if ( service.addCustomer(customer)){
+            new Alert(Alert.AlertType.INFORMATION,"Customer Added!").show();
         }
+        else {
+            new Alert(Alert.AlertType.ERROR,"Customer Not Added!").show();
+        }
+//
+//        String SQL = "INSERT INTO customer VALUES(?,?,?,?,?,?,?,?,?)";
+//
+//        try {
+//
+//            boolean isCustomerAdd = CrudUtil.execute(
+//                    SQL,
+//                    customer.getId(),
+//                    customer.getTitle(),
+//                    customer.getName(),
+//                    customer.getDob(),
+//                    customer.getSalary(),
+//                    customer.getAddress(),
+//                    customer.getCity(),
+//                    customer.getProvince(),
+//                    customer.getPostalCode()
+//
+//                    );
+//            if(isCustomerAdd){
+//                new Alert(Alert.AlertType.INFORMATION,"Customer Added:)").show();
+//                loadTable();
+//            }
+//
+//        } catch (SQLException e) {
+//            new Alert(Alert.AlertType.ERROR,"Customer Not Added:(").show();
+//        }
 
         System.out.println(customer);
     }

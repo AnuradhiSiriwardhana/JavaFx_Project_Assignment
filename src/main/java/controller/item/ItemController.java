@@ -2,9 +2,8 @@ package controller.item;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.Alert;
-import model.Item;
-import model.OrderDetail;
+import dto.Item;
+import dto.OrderDetail;
 import util.CrudUtil;
 
 import java.sql.ResultSet;

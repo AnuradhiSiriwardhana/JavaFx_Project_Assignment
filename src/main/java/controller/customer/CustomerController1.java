@@ -2,13 +2,13 @@ package controller.customer;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import model.Customer;
+import dto.Customer;
 import util.CrudUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CustomerController implements CustomerService {
+public class CustomerController1 implements CustomerService1 {
 
     @Override
     public boolean addCustomer(Customer customer) {
